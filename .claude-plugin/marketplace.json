@@ -1,0 +1,19 @@
+{
+  "name": "windowpane",
+  "owner": {
+    "name": "Brian Flanagan",
+    "email": "bflan1972@gmail.com"
+  },
+  "metadata": {
+    "description": "Windowpane — Orwell's discipline for clear prose and exposing spin.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "windowpane",
+      "source": "./",
+      "description": "Clear-writing editor + evasion detector, grounded in Orwell's \"Politics and the English Language\". Skill orwell-prose + agents prose-editor / prose-critic.",
+      "keywords": ["writing", "editing", "clarity", "orwell", "spin-detection"]
+    }
+  ]
+}

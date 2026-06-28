@@ -1,0 +1,12 @@
+# macOS / exFAT cruft
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# editor/tooling
+*.swp
+*~
+.idea/
+.vscode/

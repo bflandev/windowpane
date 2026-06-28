@@ -1,0 +1,27 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Windowpane">
+  <defs>
+    <linearGradient id="glass" x1="48" y1="48" x2="208" y2="208" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BFE0F5" stop-opacity="0.30"/>
+      <stop offset="0.55" stop-color="#7FB2D9" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#5B7A99" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="40" y1="40" x2="216" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#CFE6F7"/>
+      <stop offset="1" stop-color="#7FB2D9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- glass fill -->
+  <rect x="48" y="48" width="160" height="160" rx="14" fill="url(#glass)"/>
+
+  <!-- outer frame -->
+  <rect x="48" y="48" width="160" height="160" rx="14" stroke="url(#frame)" stroke-width="10"/>
+
+  <!-- mullions (the cross) -->
+  <line x1="128" y1="54" x2="128" y2="202" stroke="url(#frame)" stroke-width="10" stroke-linecap="round"/>
+  <line x1="54" y1="128" x2="202" y2="128" stroke="url(#frame)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- glass glints: two diagonal streaks across the upper-left pane -->
+  <line x1="70" y1="104" x2="104" y2="70" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="74" y1="118" x2="118" y2="74" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+</svg>
