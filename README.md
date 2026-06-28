@@ -6,7 +6,7 @@
 
 **Prose you can see through.**
 
-*"Good prose is like a windowpane."* — George Orwell
+*"Good prose is like a windowpane."* — George Orwell, *"Why I Write"* (1946)
 
 </div>
 
