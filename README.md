@@ -86,6 +86,25 @@ this repo targets natively. But the substance here is plain Markdown prompts, so
   agent files as named personas. The reference files under `skills/orwell-prose/references/` are
   the lookup tables they draw on.
 
+## Write this way by default (optional)
+
+The skill and agents act on text you hand them. If you also want Claude's *own* prose to follow
+Orwell's rules by default — in this and every project — add one line to your `CLAUDE.md`
+(`~/.claude/CLAUDE.md` for all projects, or a project-level `CLAUDE.md` for just one):
+
+```markdown
+Write prose in plain English: short, concrete words; the active voice; no dead metaphors, no
+padding, no jargon where an everyday word works. But this is a preference, not a mechanical rule —
+keep a passive when the actor is unknown or beside the point, keep a long word or a term of art
+when no short word carries the same meaning, and keep clarity over brevity when they conflict.
+Never strip a sentence into something stilted, ambiguous, or wrong just to make it plainer.
+```
+
+The second half matters: Orwell's Rule 6 — *"break any of these rules sooner than say anything
+outright barbarous"* — is what keeps a plain-English instruction from turning into a mechanical
+strip-the-passives pass that produces prose as dead as what it replaced. This is a personal config
+choice, not something the plugin enforces.
+
 ## Repository layout
 
 ```
