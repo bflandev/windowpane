@@ -14,7 +14,7 @@
 
 Windowpane is a small, focused writing plugin for AI coding harnesses. It turns George Orwell's
 1946 essay **"Politics and the English Language"** into a working editorial discipline — one that
-both **makes sincere writing clearer** and **exposes evasion in writing that is dodging meaning.**
+both **makes sincere writing clearer** and **exposes evasion in writing that dodges meaning.**
 
 It ships as **one skill** and **two agents**:
 
