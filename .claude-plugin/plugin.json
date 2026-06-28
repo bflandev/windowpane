@@ -1,6 +1,6 @@
 {
   "name": "windowpane",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Clear-writing editor + evasion detector, grounded in George Orwell's \"Politics and the English Language\". One skill (orwell-prose) and two agents: prose-editor tightens sincere prose; prose-critic exposes euphemism and spin in political/corporate text.",
   "author": {
     "name": "Brian Flanagan",
