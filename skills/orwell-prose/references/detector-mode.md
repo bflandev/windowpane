@@ -70,7 +70,7 @@ flagged phrase.
 
 1. **State the text's purpose and who is speaking to whom** — detection needs the rhetorical
    situation (a layoff memo and a campaign speech hide different things).
-2. **Quote each evasive move**, tag it with one of the eight categories above.
+2. **Quote each evasive move**, tag it with one of the nine categories above.
 3. **Translate** — write the plain, concrete sentence the original is avoiding. For passives and
    nominalizations, *supply the missing actor* (mark it `[actor unstated]` if genuinely unknowable
    from the text).

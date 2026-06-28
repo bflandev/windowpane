@@ -13,7 +13,7 @@
       "name": "windowpane",
       "source": "./",
       "description": "Clear-writing editor + evasion detector, grounded in Orwell's \"Politics and the English Language\". Skill orwell-prose + agents prose-editor / prose-critic.",
-      "keywords": ["writing", "editing", "clarity", "orwell", "spin-detection"]
+      "keywords": ["writing", "editing", "prose", "clarity", "plain-language", "orwell", "copyediting", "euphemism", "spin-detection", "jargon", "passive-voice", "doublespeak"]
     }
   ]
 }

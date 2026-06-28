@@ -29,6 +29,13 @@ The split is deliberate: **the editor that improves sincere prose must refuse to
 insincere prose**, because a tighter lie is a better lie. Point `prose-editor` at a layoff memo and
 it stops and hands you to `prose-critic`.
 
+**Command or agent?** Same discipline, different reach. Use the **commands** (`/proofread`,
+`/unspin`) for a quick pass in the current conversation, on text you've pasted or a file you're
+already looking at. Use the **agents** (`prose-editor`, `prose-critic`) when you want the work done
+in its own context — a larger doc, a batch, or a step inside a bigger task — so the analysis doesn't
+crowd your main thread. The agents also self-trigger on plain edit/review requests; the commands are
+explicit.
+
 ## The discipline
 
 **Orwell's six rules** (heuristics, not laws — rule 6 governs the rest):
@@ -96,6 +103,7 @@ windowpane/
 │   ├── SKILL.md
 │   ├── references/          # fault-taxonomy, false-limbs, dying-metaphors, detector-mode
 │   └── examples/before-after.md
+├── evals/                   # runnable calibration regression gate (run.sh + cases.jsonl)
 ├── assets/logo.svg
 ├── docs/DESIGN.md           # why it's built this way + validation
 ├── AGENTS.md                # cross-harness entry point
