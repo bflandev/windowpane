@@ -86,10 +86,13 @@ flagged phrase.
 
 ## Output shape
 
-A table or list of `quote → category → plain translation → what it conceals`, then a short
-paragraph naming the document's central evasion. Optionally, an honest rewrite **only if the user
-explicitly asks** "what would this say if it were honest?" — and label it clearly as a
-counterfactual, not an improvement of their text.
+A **numbered** table or list of `quote → category → plain translation → what it conceals`, then a
+short paragraph naming the document's central evasion. **Quote each phrase once — in the table.**
+Any prose that follows (central-evasion paragraph, fairness note) refers back to rows by number
+rather than re-quoting them; the table is the evidence, the prose points at it. Re-pasting the same
+five phrases across three sections reads as padding — the same flab the skill exists to cut.
+Optionally, an honest rewrite **only if the user explicitly asks** "what would this say if it were
+honest?" — and label it clearly as a counterfactual, not an improvement of their text.
 
 ## Guardrails
 
