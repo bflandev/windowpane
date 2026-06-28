@@ -4,7 +4,9 @@ description: >
   Edit prose for clarity and detect evasive language, using George Orwell's "Politics and the
   English Language" (1946) as the working discipline — his six rules and his four-part taxonomy
   of bad writing (dying metaphors, operators / verbal false limbs, pretentious diction,
-  meaningless words). Two modes. EDITOR MODE (default): tighten, declutter, and de-jargon
+  meaningless words). NOT a grammar/spell checker, and not for *editing* poetry, dialogue, or
+  legal/contractual text — though DETECTOR MODE may still analyze legal or institutional text for
+  evasion. Two modes. EDITOR MODE (default): tighten, declutter, and de-jargon
   writing — cut dead metaphors and padding, swap long Latinate words for short Anglo-Saxon
   ones, prefer the active voice, and report before/after with the reason. DETECTOR MODE:
   expose euphemism, evasion, abstraction, and bad-faith vagueness in political, corporate,
@@ -16,8 +18,7 @@ description: >
   statements, press releases, or political language for what it hides. Triggers on "Orwell",
   "politics and the english language", "six rules", "passive voice", "dying metaphor",
   "weasel words", "euphemism", "plain language", "jargon", "purple prose", "wordy",
-  "pretentious", "doublespeak", "spin", "say what you mean". NOT a grammar/spell checker and
-  NOT for poetry, dialogue, or legal text where the "rules" rightly break (see Rule 6).
+  "pretentious", "doublespeak", "spin", "say what you mean".
 ---
 
 # Orwell Prose — clear writing & evasion detection
@@ -49,8 +50,12 @@ The passive is *correct* when the actor is unknown, irrelevant, or deliberately 
 ("the samples were refrigerated overnight"). Jargon is *correct* among specialists who share it.
 Long words are *correct* when no short word carries the same meaning. Do not "fix" these.
 
-**Never apply this skill to** poetry, song lyrics, intentional dialect/voice, dialogue, quoted
+**Never *edit* (editor mode)** poetry, song lyrics, intentional dialect/voice, dialogue, quoted
 speech, or legal/contractual text whose precision depends on its boilerplate. Flag, don't edit.
+**Detector mode is different:** it may still analyze legal or institutional text — a privacy
+policy's "we value your privacy" preamble, a ToS summary — for evasion, because it exposes rather
+than rewrites. The split: editor mode never touches these; detector mode reads them like any other
+institutional text.
 
 ## Orwell's six rules (the editor's checklist)
 

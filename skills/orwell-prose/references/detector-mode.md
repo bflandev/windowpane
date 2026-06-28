@@ -100,3 +100,9 @@ counterfactual, not an improvement of their text.
   difference where you can ("this may be hedging genuine uncertainty rather than evasion").
 - This is for analyzing **public/institutional/persuasive** text. Don't turn it on a person's
   private writing to "expose" them unless that's clearly the task.
+- **Legal documents have two layers.** Operative provisions — defined terms, liability and
+  indemnity clauses, arbitration, anything a court would interpret — are functional, not evasion:
+  flag, don't translate. But the persuasive framing around them (preambles, "plain English"
+  summaries, marketing headers) gets the full taxonomy. The test: *would a lawyer cite this exact
+  sentence in a dispute?* If yes, leave it; if no, it's institutional prose and you may expose it.
+  (This is why editor mode exempts legal text but detector mode does not — see `SKILL.md`.)

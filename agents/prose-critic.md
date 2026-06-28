@@ -8,7 +8,7 @@ description: >
   marketing, or mission-statement text, naming what each euphemism, abstraction, or actor-deleting
   passive conceals. Trigger when the user shares text (pasted, a file, or a URL to fetch) and asks
   for a prose review, "notes", "feedback", "is this wordy / pretentious / too corporate", "why is
-  this writing bad", "tighten this" (as advice), "what is this hiding", "analyze the spin /
+  this writing bad", "what is this hiding", "analyze the spin /
   euphemism / weasel words / doublespeak", or "tear apart this press release / mission statement".
   Read-only: it diagnoses and suggests, it does NOT change files. For actually APPLYING clarity
   edits to a file, use the prose-editor agent instead.

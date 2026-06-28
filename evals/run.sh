@@ -11,9 +11,10 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SKILL_FILE="$ROOT/skills/orwell-prose/SKILL.md"
-CASES="$ROOT/evals/cases.jsonl"
+CASES="${CASES:-$ROOT/evals/cases.jsonl}"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 MODEL="${MODEL:-sonnet}"
+JUDGE_MODEL="${JUDGE_MODEL:-opus}"   # judge with a different/stronger tier than the generator
 
 command -v "$CLAUDE_BIN" >/dev/null || { echo "error: '$CLAUDE_BIN' not found on PATH" >&2; exit 2; }
 command -v jq >/dev/null || { echo "error: jq not found on PATH" >&2; exit 2; }
@@ -23,8 +24,8 @@ command -v jq >/dev/null || { echo "error: jq not found on PATH" >&2; exit 2; }
 SKILL_PROMPT="$(cat "$SKILL_FILE")"
 pass=0; fail=0; failed_ids=()
 
-run_model() { # $1 = user prompt, $2 = system prompt -> stdout (model reply)
-  "$CLAUDE_BIN" -p "$1" --model "$MODEL" --append-system-prompt "$2" 2>/dev/null
+run_model() { # $1 = user prompt, $2 = system prompt, $3 = model (default $MODEL) -> model reply
+  "$CLAUDE_BIN" -p "$1" --model "${3:-$MODEL}" --append-system-prompt "$2" 2>/dev/null
 }
 
 while IFS= read -r line; do
@@ -49,7 +50,7 @@ $mustnot
 SKILL OUTPUT:
 $output"
 
-  verdict_json="$(run_model "$judge_user" "$judge_sys" | tr -d '\000' | grep -o '{.*}' | head -1 || true)"
+  verdict_json="$(run_model "$judge_user" "$judge_sys" "$JUDGE_MODEL" | tr -d '\000' | grep -o '{"verdict"[^}]*}' | head -1 || true)"
   verdict="$(jq -r '.verdict // "FAIL"' <<<"$verdict_json" 2>/dev/null || echo FAIL)"
   reason="$(jq -r '.reason // "unparseable judge response"' <<<"$verdict_json" 2>/dev/null || echo "unparseable judge response")"
 

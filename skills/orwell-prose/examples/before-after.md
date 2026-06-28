@@ -109,10 +109,10 @@ The internal-contradiction check (`detector-mode.md` §9) is often the single mo
 result, because it needs **no inference about intent** — you hold two parts of the text against
 each other and the gap is self-evident.
 
-**Political statement that claims a measure is binding.** A senator's speech declares a War
-Powers Resolution decisive — *"the message could not be more clear," "does not require the
-President's signature"* — while the **same speech** concedes the President is ignoring it:
-*"Every day that Trump refuses…"* and quotes him calling it *"meaningless."*
+**Political statement that claims a measure is binding.** A legislator's speech declares a
+resolution decisive — *"the message could not be more clear," "does not require the executive's
+signature"* — while the **same speech** concedes the executive is ignoring it: *"Every day they
+refuse…"* and quotes the official calling it *"meaningless."*
 → **Flag method:** (a) declared claim = *the resolution is a binding, unmistakable rebuke*; (b)
 the text's own narrative shows it being ignored with no consequence; (c) one-line finding: *"The
 speech asserts the resolution's force while its own words demonstrate its impotence — it presents
